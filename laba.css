@@ -1,0 +1,33 @@
+.nav{
+    background-image:-moz-radial-gradient();
+    
+ }
+.nav:hover{
+  color: rgb(225, 146, 50);
+}
+
+
+
+aside{
+    width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+header{
+    
+    background-image: url(https://sb.kaleidousercontent.com/67418/1920x1100/2ed9107761/bg.png);
+    padding: 20px;
+ }
+
+ footer{
+    width: 30%;
+          padding-left: 15px;
+          margin-left: 10px;
+          float: right;
+          font-style:initial
+          
+ }
