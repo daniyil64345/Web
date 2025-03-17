@@ -1,0 +1,28 @@
+.list{
+    margin-left: 25px;
+    max-width: 200px;
+    align-content: center;
+    background-color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.list li{
+    color: blanchedalmond;
+}
+li::first-line {
+    font-size: 20px;
+    color: aquamarine;
+  }
+  img{
+    opacity: 0.5;
+  }
+  .github a{
+    background: radial-gradient(circle, rgb(255, 204, 0), rgb(246, 129, 5));
+        list-style-type: none;
+        color: #ffffff;
+  }
+  
+
+  
+
+  

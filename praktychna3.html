@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Стилізація</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1px;
+            padding-left:  5cm;
+        }
+      
+    
+        .container {
+            max-width: 800;
+            margin: 0 auto;
+            color: #ff0000;
+           
+        }
+        .container h2{
+            color: blueviolet;
+            font-style: oblique;
+            background-color: #0ea6f8;
+        }
+    
+        .container h3:hover{
+        color:rgb(255, 247, 0);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+        }
+        
+      .paragraph{
+        max-width: 600px;
+        background-color: #f8420a;
+        color: #ffffff;
+        margin-left:100px ;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .paragraph p:hover{
+        color: #0ea6f8;
+        transition: all .25s ease;
+      }
+      p:nth-child(3){
+        color: rgb(255, 255, 255);
+        background-color: rgb(221, 0, 255);
+        margin-top: 50px;
+      }
+      p:last-child{
+        color: black;
+        background-color: beige;
+      }
+
+        
+    </style>
+    <link rel="stylesheet" href="./prakrtychna3.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: blue;">Заголовок з вбудованим стилем. Незважаючи на те що ми додали стилізацію класу div в якому знаходиться цей заголовок , але якщо і вбудована стилізація і div мають однаковий елемент , заголовок вибере вбудований Вбудована стилізація має більшу авторитетність. І також стилістика body</h1>
+        <h2>Всі інші заголовки крім першого стилізуються через style в head. Цей стилізований по h2</h2>
+        <h3>Ось цей заголовок знаходиться у цьому ж класі , але у нього немає вбудованої стилізації , тому він буде набувати стилізації div i body за замовчуванням. І окремі спецефекти та анімації з hover</h2>
+    </div>
+    <br><br>
+    <div class="paragraph">
+        <p>Дефолтний параграф з div без різних заморок і зі стилем в head</p>
+        <p style="background-color: aquamarine;
+        color: #0ea6f8;">З вбудованим стилем</p>
+        <p>З псевдокласом :nth-child(n)</p>
+        <p>З псевдокласом :last-child</p>
+        
+    </div>
+    <div class="list">
+        <ul>
+            <li>Ось стиль списків оформлюється через окремий файл</li>
+           <li>А колір перших рядків через ::first-line</li>
+           <li>А колір тексту зробив через комбінатор простого пробілу</li>
+           </div>
+       <br><br>
+        <div>
+            <img src="./images/Знімок екрана 2025-03-17 175928.png" alt="Практична робота">
+            
+        </div>
+        <br><br>
+    <div class="github">
+        <a href="https://github.com/daniyil64345">Посилання</a>
+        <p style="background-color:#0ea6f8;
+        color: #ff0000;
+        border: 10px;
+        max-width: 500px;">Код буде в гітхабі і класрумі</p>
+    </div>
+</body>
+</html>
